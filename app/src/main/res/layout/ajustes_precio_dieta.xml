@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    tools:context=".Inicio">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editText11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/titulo"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="300sp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/contenedorNacional"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/disenyo_bordes_4"
+                        android:gravity="center"
+                        android:text="@string/nacional"
+                        android:textSize="28sp" />
+
+                    <LinearLayout
+                        android:id="@+id/nacionalDietas"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/desayuno"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/comida"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/cena"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/dormir"
+                                android:textSize="26sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="vertical"
+                            android:textSize="26sp">
+
+                            <EditText
+                                android:id="@+id/ediNde"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+
+                            <EditText
+                                android:id="@+id/ediNco"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+
+                            <EditText
+                                android:id="@+id/ediNce"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+
+                            <EditText
+                                android:id="@+id/ediNdo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/contenedorADR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="30sp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/disenyo_bordes_4"
+                        android:gravity="center"
+                        android:text="@string/adr"
+                        android:textSize="28sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/desayuno"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/comida"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/cena"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/dormir"
+                                android:textSize="26sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="vertical"
+                            android:textSize="26sp">
+
+                            <EditText
+                                android:id="@+id/ediADde"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+
+                            <EditText
+                                android:id="@+id/ediADco"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+
+                            <EditText
+                                android:id="@+id/editADce"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:enabled="true"
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+
+                            <EditText
+                                android:id="@+id/ediADdo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:enabled="true"
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/contenedorTIR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="30sp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/disenyo_bordes_4"
+                        android:gravity="center"
+                        android:text="@string/tir"
+                        android:textSize="28sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView19"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/desayuno"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/textView20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/comida"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/textView21"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/cena"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/textView22"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/dormir"
+                                android:textSize="26sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="vertical"
+                            android:textSize="26sp">
+
+                            <EditText
+                                android:id="@+id/ediTIde"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:enabled="true"
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+
+                            <EditText
+                                android:id="@+id/ediTIco"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:enabled="true"
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+
+                            <EditText
+                                android:id="@+id/ediTIce"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:enabled="true"
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+
+                            <EditText
+                                android:id="@+id/ediTIdo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:enabled="true"
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/contenedorItalia"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="30sp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/disenyo_bordes_4"
+                        android:gravity="center"
+                        android:text="@string/italia"
+                        android:textSize="28sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView24"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/desayuno"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/textView25"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/comida"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/textView26"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/cena"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/textView27"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/dormir"
+                                android:textSize="26sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="vertical"
+                            android:textSize="26sp">
+
+                            <EditText
+                                android:id="@+id/ediITAde"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:enabled="true"
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+
+                            <EditText
+                                android:id="@+id/ediITAco"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:enabled="true"
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+
+                            <EditText
+                                android:id="@+id/ediITAce"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:enabled="true"
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+
+                            <EditText
+                                android:id="@+id/ediITAdo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:enabled="true"
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/contenedorAlemania"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="30sp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/disenyo_bordes_4"
+                        android:gravity="center"
+                        android:text="@string/alemenia"
+                        android:textSize="28sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView29"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/desayuno"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/textView30"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/comida"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/textView31"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/cena"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/textView32"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/dormir"
+                                android:textSize="26sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="vertical"
+                            android:textSize="26sp">
+
+                            <EditText
+                                android:id="@+id/editALEde"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:enabled="true"
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+
+                            <EditText
+                                android:id="@+id/editALEco"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:enabled="true"
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+
+                            <EditText
+                                android:id="@+id/editALEce"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:enabled="true"
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+
+                            <EditText
+                                android:id="@+id/editALEdo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:enabled="true"
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/contenedorPlaza"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="30sp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/disenyo_bordes_4"
+                        android:gravity="center"
+                        android:text="@string/plaza"
+                        android:textSize="28sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView34"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/desayuno"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/textView35"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:padding="3dp"
+                                android:text="@string/comida_adr"
+                                android:textSize="26sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="vertical"
+                            android:textSize="26sp">
+
+                            <EditText
+                                android:id="@+id/editPLco"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:enabled="true"
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+
+                            <EditText
+                                android:id="@+id/editPLcoADR"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disenyo_bordes_4"
+                                android:digits="0123456789."
+                                android:enabled="true"
+                                android:inputType="number"
+                                android:minLines="1"
+                                android:padding="3dp"
+                                android:text="@string/precio_dieta"
+                                android:textAlignment="viewEnd"
+                                android:textSize="26sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

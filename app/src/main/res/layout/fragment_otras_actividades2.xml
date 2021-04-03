@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AE44F198"
+    tools:context=".OtrasActividades2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scCont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/lyCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rgSelec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8sp">
+
+                <RadioButton
+                    android:id="@+id/rbVacas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select01"
+                    style="@style/rbOtrasActividades" />
+
+                <RadioButton
+                    android:id="@+id/rbBaja"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select02"
+                    style="@style/rbOtrasActividades" />
+
+                <RadioButton
+                    android:id="@+id/rbAsuntos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select03"
+                    style="@style/rbOtrasActividades" />
+
+                <RadioButton
+                    android:id="@+id/rbFestivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select06"
+                    style="@style/rbOtrasActividades" />
+
+                <RadioButton
+                    android:id="@+id/rbSanciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select04"
+                    style="@style/rbOtrasActividades" />
+
+                <RadioButton
+                    android:id="@+id/rbOtros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select05"
+                    style="@style/rbOtrasActividades" />
+
+
+            </RadioGroup>
+            <LinearLayout
+                android:id="@+id/lyCont2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioGroup
+                    android:id="@+id/rgRetribuido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8sp">
+
+                    <TextView
+                        android:layout_marginTop="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¿Retribuido?: "
+                        android:textColor="#000"
+                        style="@style/rbOtrasActividades" />
+
+                    <RadioButton
+                        android:id="@+id/rbRetribuidoSi"
+                        android:layout_marginTop="12sp"
+                        android:layout_marginStart="8sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/si"
+                        android:textColor="#000"
+                        style="@style/rbOtrasActividades" />
+
+                    <RadioButton
+                        android:id="@+id/rbRetribuidoNo"
+                        android:layout_marginTop="12sp"
+                        android:layout_marginStart="8sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:textColor="#000"
+                        style="@style/rbOtrasActividades" />
+
+
+                </RadioGroup>
+
+
+
+                <LinearLayout
+                    android:id="@+id/lyNombreOtraActividad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:padding="3sp">
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nombre: "
+                        android:textColor="#000"
+                        android:paddingStart="6sp"
+                        android:paddingEnd="0sp"
+                        style="@style/rbOtrasActividades"/>
+                    <EditText
+                        android:id="@+id/etNombreOtrasActividades"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:inputType="text"
+                        android:maxLength="16"
+                        android:textColor="#000"
+                        android:hint="Otra actividad"
+                        android:layout_marginStart="10sp"
+                        android:paddingStart="6sp"
+                        android:paddingEnd="0sp"
+                        style="@style/rbOtrasActividades"
+                        android:importantForAutofill="no"
+                        tools:ignore="LabelFor" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lySumarComputo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="3sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Si tienes que sumar horas la computo mensual"
+                        android:textStyle="bold"
+                        android:paddingStart="6sp"
+                        android:paddingEnd="0sp"
+                        android:textColor="#000000"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/lyComputoHora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:padding="3sp">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            style="@style/rbOtrasActividades"
+                            android:textColor="#000000"
+                            android:paddingStart="6sp"
+                            android:paddingEnd="0sp"
+                            android:text="Horas:"/>
+
+                        <EditText
+                            android:id="@+id/etHorasComputo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25sp"
+                            android:background="#FFFFFF"
+                            android:paddingStart="5sp"
+                            android:paddingEnd="5sp"
+                            style="@style/rbOtrasActividades"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:maxLength="2"
+                            android:hint="00"
+                            android:importantForAutofill="no" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lyComputosMinuto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:padding="3sp">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            style="@style/rbOtrasActividades"
+                            android:textColor="#000000"
+                            android:paddingStart="6sp"
+                            android:paddingEnd="0sp"
+                            android:text="Minutos:"/>
+
+                        <EditText
+                            android:id="@+id/etMinutoComputo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25sp"
+                            android:background="#FFFFFF"
+                            android:paddingStart="5sp"
+                            android:paddingEnd="5sp"
+                            style="@style/rbOtrasActividades"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:maxLength="2"
+                            android:hint="00"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lyBotonInicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:padding="3sp">
+                    <Button
+                        android:id="@+id/btIniOtrasActividades"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/rbOtrasActividades"
+                        android:padding="15sp"
+                        android:text="inicio"/>
+                    <TextView
+                        android:id="@+id/tvIniOtrasActividades"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_marginStart="10sp"
+                        android:padding="15sp"
+                        android:textColorHint="#929ACC"
+                        android:textColor="#000000"
+                        style="@style/rbOtrasActividades"
+                        android:hint="@string/selecciona"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lyBotonFinal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:padding="3sp">
+                    <Button
+                        android:id="@+id/btFinalOtrasActividades"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/rbOtrasActividades"
+                        android:padding="15sp"
+                        android:text="final"/>
+                    <TextView
+                        android:id="@+id/tvFinalOtrasActividades"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_marginStart="10sp"
+                        android:padding="15sp"
+                        android:textColorHint="#929ACC"
+                        android:textColor="#000000"
+                        style="@style/rbOtrasActividades"
+                        android:hint="@string/selecciona"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lyBotonesOtrasActividades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btAceptarOtrasActividades"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="aceptar"
+                    style="@style/rbOtrasActividades" />
+                <Button
+                    android:id="@+id/btCancelarOtrasActividades"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="cancelar"
+                    style="@style/rbOtrasActividades" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>

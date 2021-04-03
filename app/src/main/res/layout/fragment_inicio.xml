@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio"
+    android:id="@+id/lyContFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:id="@+id/svScroll"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/lyScrollVertCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:fillViewport="true"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/lyContTodo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/lyContFecha"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#00BCD4"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/lyFecha"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:paddingTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/tvFechaCabecera"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="6dp"
+                                    android:text="@string/fecha"
+                                    android:textColor="#000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:gravity="center"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lyBotonesFecha"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btHoy"
+                                    style="?android:attr/borderlessButtonStyle"
+                                    android:background="?attr/colorButtonNormal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_marginStart="5dp"
+                                    android:padding="25dp"
+                                    android:text="@string/selecciona_hoy"
+                                    android:textColor="#000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btOtroDia"
+                                    style="?android:attr/borderlessButtonStyle"
+                                    android:background="?attr/colorButtonNormal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_marginStart="5dp"
+                                    android:padding="25dp"
+                                    android:text="@string/selecciona_otro_dia"
+                                    android:textColor="#000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lyCuadroFecha"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:id="@+id/tvFecha"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#04DAF8"
+                                    android:hint="@string/seleccionar_fecha"
+                                    android:padding="6dp"
+                                    android:textAlignment="center"
+                                    android:textColor="#000"
+                                    android:textSize="@dimen/textoNormal" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lyADR"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FF9800"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/tvADR"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/adr"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/textoNormal"
+                                android:textStyle="bold" />
+
+                            <RadioGroup
+                                android:id="@+id/rbgADR"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#F3CC94"
+                                android:checkedButton="@id/rbNo"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rbSi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:background="#F7EAD8"
+                                    android:buttonTint="#000000"
+                                    android:padding="2dp"
+                                    android:text="@string/si"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+
+                                <RadioButton
+                                    android:id="@+id/rbNo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:background="#F7EAD8"
+                                    android:buttonTint="#000000"
+                                    android:padding="2dp"
+                                    android:text="@string/no"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+                            </RadioGroup>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lyConOtras"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#836EAA"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <Button
+                                android:id="@+id/btOotras"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:background="?attr/colorButtonNormal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Otras_actividades"
+                                android:layout_margin="10dp"
+                                android:padding="20dp"
+                                android:textSize="@dimen/textoNormal"
+                                android:textStyle="bold"/>
+                            <!--                <TextView
+                                                android:id="@+id/tvOtras"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="10dp"
+                                                android:layout_margin="10dp"
+                                                android:background="#D8C9F3"
+                                                android:gravity="center"
+                                                android:textColor="#000000"
+                                                android:textSize="24dp"
+                                                android:padding="16dp"
+                                                android:textStyle="bold" />-->
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lyContHoras"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#40CC43"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/tvHorasCabecera"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="@string/horas_trabaja"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/lyContHoraIni"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btHoraIni"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:padding="20dp"
+                                    android:text="@string/hora_inicio"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvHoraIni"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="6dp"
+                                    android:layout_weight="1"
+                                    android:background="#6AE26D"
+                                    android:gravity="center"
+                                    android:hint="@string/selecciona_hora"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="0dp"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lyContHoraFin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btHoraFin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:padding="20dp"
+                                    android:text="@string/hora_final"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvHoraFin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="6dp"
+                                    android:layout_weight="1"
+                                    android:background="#6AE26D"
+                                    android:gravity="center"
+                                    android:hint="@string/selecciona_hora"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="0dp"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lyContTotal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvTotalText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#6AE26D"
+                                    android:gravity="center|end"
+                                    android:padding="8dp"
+                                    android:text="@string/total"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoTotal"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvTotalResult"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#6AE26D"
+                                    android:gravity="center_horizontal"
+                                    android:padding="8dp"
+                                    android:paddingStart="10dp"
+                                    android:paddingEnd="0dp"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoTotal"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lyContDietas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#F7DB30"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="Dietas"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/textoNormal"
+                                android:textStyle="bold"/>
+
+                            <LinearLayout
+                                android:id="@+id/lyDesayuno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvDesayuno"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="6dp"
+                                    android:layout_weight="8"
+                                    android:background="#F5EC90"
+                                    android:gravity="center"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="0dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
+                                    android:text="DESAYUNO"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvDesayunoTipo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="6dp"
+                                    android:layout_weight="8"
+                                    android:background="#F5EC90"
+                                    android:gravity="center"
+                                    android:hint="@string/selecciona"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="0dp"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvDesayunoPrecio"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="6dp"
+                                    android:layout_weight="10"
+                                    android:background="#F5EC90"
+                                    android:gravity="center"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="0dp"
+                                    android:hint="@string/_0_00"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lyComida"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvComida"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="6dp"
+                                    android:layout_weight="8"
+                                    android:background="#F5EC90"
+                                    android:gravity="center"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="0dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
+                                    android:text="COMIDA"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvComidaTipo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="6dp"
+                                    android:layout_weight="8"
+                                    android:background="#F5EC90"
+                                    android:gravity="center"
+                                    android:hint="@string/selecciona"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="0dp"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvComidaPrecio"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="6dp"
+                                    android:layout_weight="10"
+                                    android:background="#F5EC90"
+                                    android:gravity="center"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="0dp"
+                                    android:hint="@string/_0_00"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lyCena"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvCena"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="6dp"
+                                    android:layout_weight="8"
+                                    android:background="#F5EC90"
+                                    android:gravity="center"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="0dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
+                                    android:text="CENA"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvCenaTipo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="6dp"
+                                    android:layout_weight="8"
+                                    android:background="#F5EC90"
+                                    android:gravity="center"
+                                    android:hint="@string/selecciona"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="0dp"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvCenaPrecio"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="6dp"
+                                    android:layout_weight="10"
+                                    android:background="#F5EC90"
+                                    android:gravity="center"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="0dp"
+                                    android:hint="@string/_0_00"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lyNoche"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvNoche"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="6dp"
+                                    android:layout_weight="8"
+                                    android:background="#F5EC90"
+                                    android:gravity="center"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="0dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
+                                    android:text="NOCHE"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvNocheTipo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="6dp"
+                                    android:layout_weight="8"
+                                    android:background="#F5EC90"
+                                    android:gravity="center"
+                                    android:hint="@string/selecciona"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="0dp"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvNochePrecio"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="6dp"
+                                    android:layout_weight="10"
+                                    android:background="#F5EC90"
+                                    android:gravity="center"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="0dp"
+                                    android:hint="@string/_0_00"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lyTotalDieta"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvTotalTXT"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#F5EC90"
+                                    android:gravity="center|end"
+                                    android:padding="8dp"
+                                    android:text="TOTAL: "
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoTotal"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvDietaTotalResult"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#F5EC90"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:hint="@string/_0_00"
+                                    android:padding="8dp"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoTotal"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lyContBonesByG"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#000000"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/lyBotonesByG"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#000000"
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btGuardar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="?attr/colorButtonNormal"
+                                    android:padding="25dp"
+                                    android:text="GUARDAR"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    style="?android:attr/borderlessButtonStyle"/>
+
+                                <Button
+                                    android:id="@+id/btBorrar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="?attr/colorButtonNormal"
+                                    android:padding="25dp"
+                                    android:text="BORRAR"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/textoNormal"
+                                    android:textStyle="bold"
+                                    android:layout_marginStart="5dp"
+                                    style="?android:attr/borderlessButtonStyle" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="1dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+    </FrameLayout>

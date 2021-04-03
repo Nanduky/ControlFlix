@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HojaMensual"
+    android:clipChildren="false"
+    android:id="@+id/scrollArchivoConsultaVerDias">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+         <LinearLayout
+        android:id="@+id/lyvolverAlMes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+             <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:orientation="horizontal">
+
+
+                    <Button
+                    android:id="@+id/btVolverAlMes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:textSize="25sp"
+                    android:text="Volver a elegir mes" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/bt_guardar_pdf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10sp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="0sp"
+                        android:padding="2sp"
+                        android:textSize="8sp"
+                        tools:ignore="Smallsp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:gravity="bottom|center_horizontal"
+                        android:text="PDF"
+                        android:background="@mipmap/guarda_pdf"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <HorizontalScrollView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+            <!-- TODO: Update blank fragment layout -->
+
+            <TableLayout
+            android:id="@+id/tbly_hoja_del_mes_seleccionado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp">
+            <TableRow
+                android:id="@+id/trCabeceraDelMesSeleccionado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="25dp"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:id="@+id/tvTablaidDelMesSeleccionado"
+                    android:layout_column="0"
+                    android:padding="3dp"
+                    android:text="@string/idTabla"
+                    android:visibility="gone"
+                    style="@style/cabecera_table"/>
+                <TextView
+                    android:id="@+id/tvTablaFechaDelMesSeleccionado"
+                    android:layout_column="0"
+                    android:padding="3dp"
+                    android:text="@string/fechaTabla"
+                    style="@style/cabecera_table"/>
+
+                <TextView
+                    android:id="@+id/tvTablaDiaDelMesSeleccionado"
+                    android:layout_column="1"
+                    android:padding="3dp"
+                    android:text="@string/diaTabla"
+                    style="@style/cabecera_table"/>
+                <TextView
+                    android:id="@+id/tvTablaHoraIniDelMesSeleccionado"
+                    android:layout_column="2"
+                    android:padding="3dp"
+                    android:text="@string/hora_inicioTabla"
+                    style="@style/cabecera_table"/>
+                <TextView
+                    android:id="@+id/tvTablaHoraFinDelMesSeleccionado"
+                    android:layout_column="3"
+                    android:padding="3dp"
+                    android:text="@string/hora_finalTabla"
+                    style="@style/cabecera_table"/>
+                <TextView
+                    android:id="@+id/tvTablaTotalHorasDelMesSeleccionado"
+                    android:layout_column="4"
+                    android:padding="3dp"
+                    android:text="@string/total_horasTabla"
+                    style="@style/cabecera_table"/>
+                <TextView
+                    android:id="@+id/tvTablaSeparador1DelMesSeleccionado"
+                    android:layout_column="5"
+                    android:padding="3dp"
+                    android:layout_marginEnd="10dp"/>
+                <TextView
+                    android:id="@+id/tvTablaADRDelMesSeleccionado"
+                    android:layout_column="6"
+                    android:padding="3dp"
+                    android:text="@string/adrTabla"
+                    style="@style/cabecera_table"/>
+                <TextView
+                    android:id="@+id/tvTablaDesayunoDelMesSeleccionado"
+                    android:layout_column="7"
+                    android:padding="3dp"
+                    android:text="@string/desayunoTabla"
+                    style="@style/cabecera_table"/>
+                <TextView
+                    android:id="@+id/tvTablaComidaDelMesSeleccionado"
+                    android:layout_column="8"
+                    android:padding="3dp"
+                    android:text="@string/comidaTabla"
+                    style="@style/cabecera_table"/>
+                <TextView
+                    android:id="@+id/tvTablaCenaDelMesSeleccionado"
+                    android:layout_column="9"
+                    android:padding="3dp"
+                    android:text="@string/cenaTabla"
+                    style="@style/cabecera_table"/>
+                <TextView
+                    android:id="@+id/tvTablaDormirDelMesSeleccionado"
+                    android:layout_column="10"
+                    android:padding="3dp"
+                    android:text="@string/dormirTabla"
+                    style="@style/cabecera_table"/>
+                <TextView
+                    android:id="@+id/tvTablaTotalDietaDelMesSeleccionado"
+                    android:layout_column="11"
+                    android:padding="3dp"
+                    android:text="@string/totalDietaTabla"
+                    style="@style/cabecera_table"/>
+                <TextView
+                    android:id="@+id/tvTablaSeparador2DelMesSeleccionado"
+                    android:layout_column="12"
+                    android:padding="3dp"
+                    android:layout_marginEnd="10dp"/>
+                <TextView
+                    android:id="@+id/tvTablaExtraDelMesSeleccionado"
+                    android:layout_column="13"
+                    android:padding="3dp"
+                    android:text="@string/extrasTabla"
+                    style="@style/cabecera_table"/>
+                <TextView
+                    android:id="@+id/tvTablaSeparador3DelMesSeleccionado"
+                    android:layout_column="14"
+                    android:padding="3dp"
+                    android:layout_marginEnd="25dp"/>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+        </HorizontalScrollView>
+
+         </LinearLayout>
+    </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/lyMenuBorrarMultiple"
+            android:weightSum="9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#03A9F4"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvCancelarSelect"
+                android:layout_weight="0.2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="10dp"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/baloo"
+                android:text="X"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvContadorSelect"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="10dp"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/baloo"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+            <Space
+                android:layout_weight="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/ivCheckSelect"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_check_select_todo"
+                android:contentDescription="TODO" />
+            <Space
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/ivBorrarSelect"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_borrar_select"
+                android:contentDescription="BORRAR" />
+        </LinearLayout>
+
+        
+
+
+
+
+</RelativeLayout>
